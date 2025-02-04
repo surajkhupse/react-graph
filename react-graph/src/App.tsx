@@ -1,12 +1,10 @@
-import React from 'react'
-import GraphFlow from './components/react-flow'
+import React from 'react';
+import ReactFlow from './component/react-flow';
 
 const App = () => {
   return (
-    <div>
-      <GraphFlow></GraphFlow>
-    </div>
+    <ReactFlow />
   )
 }
 
-export default App
+export default App;

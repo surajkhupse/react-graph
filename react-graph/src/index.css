@@ -49,40 +49,14 @@ body,
   right: 10px;
   display: flex;
   align-items: center;
-  /* border: 2px solid #ccc; */
+  border: 2px solid #ccc;
   border-radius: 4px;
   padding: 5px;
   margin-left: 10px;
-  /* background-color: rgb(251, 248, 248); */
+  background-color: rgb(251, 248, 248);
 }
 
 .color-picker-container i {
   margin-left: 10px;
 
-}
-
-.undoButton {
-  position: absolute;
-  top: 50px;
-  right: 10px;
-}
-
-.redoButton {
-  position: absolute;
-  top: 90px;
-  right: 10px;
-}
-
-.text-size-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-#textSizePicker {
-  position: absolute;
-  top: 130px;
-  right: 10px;
-  padding: 5px;
-  font-size: 14px;
 }
