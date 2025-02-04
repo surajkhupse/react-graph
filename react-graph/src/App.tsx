@@ -1,10 +1,12 @@
-import React from 'react';
-import ReactFlow from './component/react-flow';
+import React from 'react'
+import ReactFlow from './components/react-flow';
 
 const App = () => {
   return (
-    <ReactFlow />
+    <>
+      <ReactFlow/>
+    </>
   )
 }
 
-export default App;
+export default App
