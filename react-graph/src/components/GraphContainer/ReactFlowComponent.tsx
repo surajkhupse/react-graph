@@ -227,7 +227,7 @@ const reactFlow = () => {
             <div>
             <UndoRedoControls undo={undo} redo={redo }></UndoRedoControls>
             </div>
-            {/* <button className="btn btn-outline-secondary btn-sm undoButton"
+            <button className="btn btn-outline-secondary btn-sm undoButton"
                 onClick={undo}
             >
                 <i className="bi bi-arrow-counterclockwise"></i> Undo
@@ -236,7 +236,7 @@ const reactFlow = () => {
                 onClick={redo}
             >
                 <i className="bi bi-arrow-clockwise"></i> Redo
-            </button> */}
+            </button>
         </>
     )
 }

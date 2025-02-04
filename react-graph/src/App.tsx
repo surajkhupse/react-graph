@@ -1,11 +1,11 @@
 import React from 'react'
-import GraphFlow from './components/react-flow'
+import ReactFlow from './components/react-flow';
 
 const App = () => {
   return (
-    <div>
-      <GraphFlow></GraphFlow>
-    </div>
+    <>
+      <ReactFlow/>
+    </>
   )
 }
 
