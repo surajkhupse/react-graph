@@ -1,4 +1,4 @@
-# React Graph
+#  React Graph Setup Guide
 
 ## Setup Instructions
 
