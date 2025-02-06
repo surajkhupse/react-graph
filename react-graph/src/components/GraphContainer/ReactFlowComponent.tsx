@@ -3,10 +3,9 @@ import { ReactFlow, useNodesState, useEdgesState, addEdge, Background, MiniMap, 
 import '@xyflow/react/dist/style.css';
 import { initialEdges } from '../edges';
 import { initialNodes } from '../nodes';
-import UndoRedoControls from './UndoRedoControls';
+import NodeCustomizationPanel from './ NodeCustomizationPanel';
 
-
-const reactFlow = () => {
+const GraphFlow = () => {
     // selected node state
     const [selectedNodeId, setSelectedNodeId] = useState<any>(null);
 
@@ -206,39 +205,21 @@ const reactFlow = () => {
                 <Controls />
             </ReactFlow>
         </div>
-            <div className="color-picker-container">
-                <label htmlFor="colorPicker" className='mx-2'>Node Color</label>
-                <input id="colorPicker" type="color" value={currentColor} onChange={(e) => onColorChange(e.target.value)} />
-                <i className="fa fa-shower" aria-hidden="true"></i>
-            </div>
-            <div className="text-size-container">
-                <label htmlFor="textSizePicker" className='mx-2'>Text Size</label>
-                <select
-                    id="textSizePicker"
-                    value={currentTextSize}
-                    onChange={(e) => onTextSizeChange(e.target.value)}
-                    style={{ display: 'block', zIndex: 10 }}
-                >
-                    {fontSize.map((size) => (
-                        <option key={size.value} value={size.value}>{size.label}</option>
-                    ))}
-                </select>
-            </div>
-            <div>
-            <UndoRedoControls undo={undo} redo={redo }></UndoRedoControls>
-            </div>
-            <button className="btn btn-outline-secondary btn-sm undoButton"
-                onClick={undo}
-            >
-                <i className="bi bi-arrow-counterclockwise"></i> Undo
-            </button>
-            <button className="btn btn-outline-secondary btn-sm redoButton"
-                onClick={redo}
-            >
-                <i className="bi bi-arrow-clockwise"></i> Redo
-            </button>
+            {/* <ColorPicker currentColor={currentColor} onColorChange={onColorChange}></ColorPicker>
+            <FontSizeControl currentTextSize={currentTextSize} onTextSizeChange={onTextSizeChange} fontSizeOptions={fontSize}></FontSizeControl>
+            <UndoRedoControls undo={undo} redo={redo}></UndoRedoControls> */}
+            <NodeCustomizationPanel
+                currentColor={currentColor}
+                onColorChange={onColorChange}
+                currentTextSize={currentTextSize}
+                onTextSizeChange={onTextSizeChange}
+                fontSizeOptions={fontSize} 
+                undo={undo}
+                redo={redo}
+            />
+
         </>
     )
 }
 
-export default reactFlow
+export default GraphFlow
