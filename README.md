@@ -4,7 +4,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/surajkhupse/react-graph.git>
    cd react-graph
    ```
 2. Install dependencies:
