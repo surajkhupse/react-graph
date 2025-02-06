@@ -1,10 +1,9 @@
-import React from 'react'
-import ReactFlow from './components/react-flow';
+import GraphFlow from './components/GraphContainer/ReactFlowComponent';
 
 const App = () => {
   return (
     <>
-      <ReactFlow/>
+      <GraphFlow/>
     </>
   )
 }
