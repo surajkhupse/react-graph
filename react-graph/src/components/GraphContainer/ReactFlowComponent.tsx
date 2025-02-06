@@ -205,9 +205,6 @@ const GraphFlow = () => {
                 <Controls />
             </ReactFlow>
         </div>
-            {/* <ColorPicker currentColor={currentColor} onColorChange={onColorChange}></ColorPicker>
-            <FontSizeControl currentTextSize={currentTextSize} onTextSizeChange={onTextSizeChange} fontSizeOptions={fontSize}></FontSizeControl>
-            <UndoRedoControls undo={undo} redo={redo}></UndoRedoControls> */}
             <NodeCustomizationPanel
                 currentColor={currentColor}
                 onColorChange={onColorChange}
