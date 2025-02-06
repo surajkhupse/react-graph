@@ -18,7 +18,7 @@
 4. Build the project:
    ```bash
    npm run build
-  ``` `
+  
 5. Preview the build 
   ```bash
    npm run preview
